@@ -45,24 +45,24 @@ public class Mathgame {
                 for (int i = 0; i <12; i++){
                     if (i < 3){ //addition questions
                         System.out.println("Addition Questions!");
-                System.out.println("What is " + a + "+" + b + "?");
+                        System.out.println("What is " + a + "+" + b + "?");
                 
-                System.out.println(option1 + "." + (a+b) );
-                System.out.println(option2 + "." + (a-b) );
-                System.out.println(option3 + "." + (a*b) );
-                System.out.println(option4 + "." + (a/b) );
-                correct = option1;
-                input = scanner.nextInt();
-                if(input == correct ){
-                    System.out.println("Correct!");
-                    score = score +1;
+                        System.out.println(option1 + "." + (a+b) );
+                        System.out.println(option2 + "." + (a-b) );
+                        System.out.println(option3 + "." + (a*b) );
+                        System.out.println(option4 + "." + (a/b) );
+                        correct = option1;
+                        input = scanner.nextInt();
+                        if(input == correct ){
+                        System.out.println("Correct!");
+                        score = score +1;
                     
-                }
-                else{
-                    System.out.println("Incorrect!");
-                    break;
+                        }
+                        else{
+                        System.out.println("Incorrect!");
+                        break;
                     //add scoring system here
-                }
+                        }
             }
             if (i >= 3 && i < 7){       //subtraction questions
                 System.out.println("Subtraction Questions!");
@@ -89,12 +89,11 @@ public class Mathgame {
 		
 	}
 
-	if (i >= 7 && i < 9){   //multiplication questions
-            System.out.println("Multiplication Questions!");
+            if (i >= 7 && i < 9){   //multiplication questions
+                System.out.println("Multiplication Questions!");
                 a = rand.nextInt(51);
                 b = rand.nextInt(51);
                 System.out.println("What is " + a + "*" + b + "?");
-                
                 System.out.println(option1 + "." + (a+b) );
                 System.out.println(option2 + "." + (a-b) );
                 System.out.println(option3 + "." + (a*b) );
@@ -113,15 +112,15 @@ public class Mathgame {
             }
 		
 		
-                if (i >= 9 && i < 12){
+            if (i >= 9 && i < 12){
 
 		//do division questions
 		//in terms of creating a division question, think about division in 
 //terms of multiplication. 3*4 = 12 but 12/4 = 3.
-		input = scanner.nextInt();
-		if(input == correct){
-                    System.out.println("Correct!");
-			score = score + 4;
+            input = scanner.nextInt();
+            if(input == correct){
+                System.out.println("Correct!");
+                score = score + 4;
 		}
 	}
                 
@@ -160,11 +159,11 @@ public class Mathgame {
 
 	
 }
-         else if(input == 2){
-                System.out.println("You have chosen to quit the game, see you next time!");
+        else if(input == 2){
+            System.out.println("You have chosen to quit the game, see you next time!");
             }
-            else{
-                System.out.println("Incorrect entry, please try again");  //find a way to make this not repeat itself
+        else{
+            System.out.println("Incorrect entry, please try again");  //find a way to make this not repeat itself
             }
         } 
         
